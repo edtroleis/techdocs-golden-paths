@@ -1,0 +1,32 @@
+site_name: Golden Path para Serviços
+site_description: Jornada para criar, validar e operar um serviço
+repo_url: https://github.com/edtroleis/techdocs-golden-paths
+edit_uri: edit/main/servicos/docs/
+nav:
+  - Início: index.md
+  - 1. Preparação:
+      - Pré-requisitos: 1-preparacao/pre-requisitos.md
+      - Criar o repositório: 1-preparacao/criar-repositorio.md
+  - 2. Construção:
+      - Estrutura do serviço: 2-construcao/estrutura.md
+      - Testes: 2-construcao/testes.md
+      - Container: 2-construcao/container.md
+  - 3. Validação:
+      - Pipeline de CI: 3-validacao/pipeline-ci.md
+      - Segurança: 3-validacao/seguranca.md
+  - 4. Produção:
+      - Deploy: 4-producao/deploy.md
+      - Observabilidade: 4-producao/observabilidade.md
+      - Operação: 4-producao/operacao.md
+  - Referência:
+      - Checklist de produção: referencia/checklist.md
+      - Glossário: referencia/glossario.md
+plugins:
+  - techdocs-core
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+strict: true

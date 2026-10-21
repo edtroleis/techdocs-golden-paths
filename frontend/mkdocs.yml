@@ -1,0 +1,30 @@
+site_name: Golden Path para Frontend
+site_description: Como criar e publicar um frontend em CDN em menos de 1 dia
+repo_url: https://github.com/edtroleis/techdocs-golden-paths
+edit_uri: edit/main/frontend/docs/
+nav:
+  - Início: index.md
+  - 1. Preparação:
+      - Pré-requisitos: 1-preparacao/pre-requisitos.md
+      - Criar o projeto: 1-preparacao/criar-projeto.md
+  - 2. Construção:
+      - Stack e estrutura: 2-construcao/stack-e-estrutura.md
+      - Configuração por ambiente: 2-construcao/configuracao.md
+  - 3. Validação:
+      - Testes: 3-validacao/testes.md
+      - Performance e acessibilidade: 3-validacao/performance-acessibilidade.md
+  - 4. Publicação na CDN:
+      - Build e upload: 4-publicacao/build-upload.md
+      - Cache e invalidação: 4-publicacao/cache-invalidacao.md
+      - Rollback: 4-publicacao/rollback.md
+  - Referência:
+      - Checklist: referencia/checklist.md
+plugins:
+  - techdocs-core
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+strict: true

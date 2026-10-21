@@ -1,0 +1,33 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: golden-path-servicos
+  title: Service - do zero à produção
+  description: Jornada para criar, validar e operar um serviço
+  tags: [golden-path, backend]
+  annotations:
+    github.com/project-slug: edtroleis/techdocs-golden-paths
+    backstage.io/techdocs-ref: dir:./servicos
+    portal.local/category: Backend
+    portal.local/topics: Preparação, Construção, Validação, Produção
+spec:
+  type: golden-path
+  lifecycle: production
+  owner: platform-team
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: golden-path-frontend
+  title: Frontend - do zero à CDN
+  description: Como criar e publicar um frontend em CDN em menos de 1 dia
+  tags: [golden-path, frontend]
+  annotations:
+    github.com/project-slug: edtroleis/techdocs-golden-paths
+    backstage.io/techdocs-ref: dir:./frontend
+    portal.local/category: Frontend
+    portal.local/topics: Preparação, Construção, Validação, Publicação
+spec:
+  type: golden-path
+  lifecycle: production
+  owner: platform-team
