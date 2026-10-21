@@ -14,11 +14,7 @@
 
 | Ferramenta | Versão | Manual |
 |------------|--------|--------|
-| OpenShift Dev Spaces | workspace do repositório | [Manual de OpenShift Dev Spaces](http://localhost:3000/docs/default/component/manual-dev-spaces) |
+| WSL2 (Windows) | Ubuntu LTS | [Manual de WSL](http://localhost:3000/docs/default/component/manual-wsl) |
 | Podman | 5.x | [Manual de Podman Desktop](http://localhost:3000/docs/default/component/manual-podman-desktop) |
 | Git + GitHub CLI | recente | — |
 | Runtime da linguagem | versão LTS aprovada | — |
-
-!!! tip "Sem instalar nada"
-    No Dev Spaces, Git, Podman e o runtime já vêm no workspace definido pelo `devfile.yaml`.
-    O [WSL](http://localhost:3000/docs/default/component/manual-wsl) está descontinuado como ambiente local.
